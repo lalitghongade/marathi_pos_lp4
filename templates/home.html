@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    .st{
+      height: 250px;
+      width: 60%;
+      border: 10px;
+      align-content: center;
+      padding: 100px;
+      background-color: lightblue;
+      box-shadow: 10px 10px grey;
+      border-radius: 30px;
+    }
+    input[type="text"]{
+      width:500px;
+      border-radius: 5px;
+      height: 35px;
+    }
+
+    input[type="submit"]{
+      background-color: lime;
+      height: 30px;
+      width: 100px;
+      border-radius:10px;
+    }
+    </style>
+    <title>NLP project</title>
+  </head>
+  <body >
+    <h1><center>NLP Project: Part of Speech Tagger (Marathi)</center></h1><br>
+    <center>
+    <div class="st">
+    <form method="POST">
+    <center><div> Enter text: <input type="text" size="50" name="ip" value=""> <input type="submit" name="" value="Submit"> </div>
+    {% if output != null%}
+     <h4> {{ output2 }}</h4>
+    <p name="op">Result: {{ output }}</p></center>
+    {% endif %}
+    </form>
+  </div>
+</center>
+  </body>
+</html>
